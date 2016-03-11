@@ -1,0 +1,424 @@
+ /* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: arial;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*
+ ********************************
+ *=end css reset
+ ********************************
+*/
+
+/*
+ ********************************
+ *=global
+ ********************************
+*/
+.main-content p{
+    font-size: 14px;
+}
+
+ 
+ 
+ /*
+  ********************************
+  *=header
+  ********************************
+ */
+.wrapper{
+ 	width:100%;
+    max-width:960px;
+ 	margin:0 auto;
+}
+
+header{
+ 	background: #151515;
+}
+/*clear the collapse floats*/
+header:after{
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+#logo{
+ 	background: url(../images/logo.png)no-repeat;
+ 	width: 312px;
+ 	height: 68px;
+    text-indent: -99999px;
+ 	float: left;
+}
+
+header nav{
+ 	margin-top: 29px;
+ 	margin-bottom: 27px;
+    float: right;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color:#ffffff;
+}
+
+header li{
+    display: inline;
+
+}
+
+header li:after{
+    content: "/";
+    padding: 0 21px;
+    color: #50b106;
+    font-weight: bolder;
+}
+/*removes the / in the last li item*/
+header li:last-child:after{
+    content: "";
+}
+
+/*
+  ********************************
+  *=lead-banner
+  ********************************
+ */
+#lead-banner img{
+    width: 100%;
+}
+
+#lead-banner{
+    max-height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-overlay{
+    position: absolute;
+    top: 104px;
+    width: 100%;
+}
+
+.banner-title{
+    font-size: 72px;
+    color: #ffffff;
+    text-transform: uppercase;
+ 
+}
+
+#lead-banner p{
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+#lead-banner a{
+    text-decoration: none;
+    background: #3d9f0a;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    width: 200px;
+    height: 19px;
+    padding:16px 0;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    /*set its border radius */
+     border-radius:5px;
+    /*set its box shadow*/
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+ /*
+  ********************************
+  *=main-content
+  ********************************
+ */
+section{
+    margin:77px 0 64px;
+}
+
+section:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.main-content ul li{
+    list-style: none;
+}
+/*point of sale section*/
+#point-of-sale h2{
+    text-indent: -999px;
+}
+
+#point-of-sale li{
+   width: 266px;
+   float: left;
+  
+}
+
+#point-of-sale li:nth-child(2){
+     margin:0 71px;
+}
+
+#point-of-sale li h3{
+     text-align: center;
+     font-size: 32px;
+     color: #8c8b8b;
+     margin:39px 0 35px;
+     font-weight: normal;
+}
+
+#point-of-sale li p{
+    text-align: center;
+    color: #adacac;
+    line-height:17px;
+}
+/*what our client say section*/
+#what-our-client-say{
+   margin-top: 147px;
+   border-top: 1px solid #e8e8e8;
+}
+
+#what-our-client-say h2{
+   font-size: 22px;
+   background: #52b106;
+   width: 296px;
+   color: white;
+   text-align: center;
+   padding: 13px 0;
+   text-transform: uppercase;
+   position: relative;
+   top: -24px;
+   margin: 0 auto;
+   border-left: 23px solid white;
+   border-right: 23px solid white;
+}
+
+#what-our-client-say img{
+    padding-top: 73px;
+    width: 267px;
+    float: left;
+}
+
+#what-our-client-say blockquote p{
+    padding-top: 100px;
+    color: #adacac;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    float: right;
+    width: 678px;
+
+}
+
+#what-our-client-say blockquote p:before{
+    content: "“";
+    font-size:100px;
+    color: #e6e6e6;
+    font-weight: bolder;
+    font-style: italic;
+}
+/*drop-us-a-line*/
+#drop-us-a-line{
+    margin-top: 94px;
+    border-top: 1px solid #e8e8e8;
+}
+
+#drop-us-a-line h2{
+    font-size: 22px;
+    color: white;
+    background: #52b106;
+    width: 211px;
+    padding: 13px 0;
+    text-align: center;
+    position: relative;
+    top: -24px;
+    margin: 0 auto;
+    border-left: 23px solid white;
+    border-right: 23px solid white;
+    text-transform: uppercase;
+}
+
+#contact-methods{
+    float: left;
+    margin-top: 82px;
+}
+
+#contact-methods li{
+    color: #adacac;
+    line-height: 25px;
+    clear: left;
+    
+}
+
+#contact-methods li:before{
+    content: "";
+    display: block;
+    width:37px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    background: url(../images/awesome-sprite-logo.png)no-repeat;
+}
+
+#contact-methods li:nth-child(1):before{
+    background-position: -156px 0;
+}
+
+#contact-methods li:nth-child(2):before{
+    background-position: -235px 0;
+}
+
+#contact-methods li:nth-child(3):before{
+    background-position: -195px 0;
+}
+ 
+
+#drop-us-a-line img{
+    margin-top: 66px;
+    float: right;
+}
+
+#social-nav{
+    clear: both;
+    position: relative;
+    top: -40px;
+}
+
+#social-nav li{
+    text-decoration: none;
+    float: left;
+    padding-left: 7px;
+    width: 32px;
+    height: 35px;
+    background: url(../images/awesome-sprite-logo.png);
+    text-indent: -9999px;
+}
+
+#social-nav li:nth-child(1){
+    background-position: 0 1px;
+}
+
+#social-nav li:nth-child(2){
+    background-position: -39px 1px;
+}
+
+#social-nav li:nth-child(3){
+    background-position: -78px 1px;
+}
+
+#social-nav li:nth-child(4){
+    background-position: -117px 1px;
+}
+
+#social-nav a{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
